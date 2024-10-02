@@ -1,5 +1,5 @@
 name = "Giorgi"
-surname= "Chigvinadzew"
+surname= "Chigvinadze"
 age= 14
 height= 174
 
@@ -7,6 +7,6 @@ knows_programmin = True
 
 
 
-print("My name is "+name+" "+" my surname is "+surname+" "+"i am "+" "+str(age)+" "+"years old" " my height is"+str(height))
+print("My name is "+name+" "+" my surname is "+surname+" "+"i am "+" "+str(age)+" "+"years old" " my height is "+str(height))
 
 

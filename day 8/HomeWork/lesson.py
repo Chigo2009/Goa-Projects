@@ -12,3 +12,35 @@ print(variable1 and variable2)
 print(variable1 or variable2)
 num1=(5)
 num2=(10)
+print("Answer is: ",num1 == num2)
+print("Answer is: ",num1 < num2)
+print("Answer is: ",num1 > num2)
+print("Answer is: ",num1 <= num2)
+print("Answer is: ",num1 >= num2)
+print("Answer is: ",num1 != num2)
+a = int(input("Enter your number: "))
+b = int(input("Enter your number: "))
+c = int(input("Enter your number: "))
+is_a_greatest = ("Greatest number: ",c < a > b )
+print(is_a_greatest)
+is_b_middle = ("Middle number: ",c < b < a )
+print(is_b_middle)
+is_c_least= ("Least number: ",b > c < a)
+print(is_c_least)
+
+
+
+score = 100
+if 50 <= score :
+    is_pass = True
+    print( is_pass  )
+elif 75 <= score and score < 90:
+    is_high_pass = True
+    print(is_high_pass)  
+elif 100  == score:
+    is_perfect= True
+    print(is_perfect)
+elif 50 < score:
+    is_failed = True
+    print(is_failed)
+

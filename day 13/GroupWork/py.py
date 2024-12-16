@@ -1,0 +1,1 @@
+#Sxvis Kompiutershi Gavaketet

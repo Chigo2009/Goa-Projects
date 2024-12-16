@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>რეგისტრაცია</title>
+</head>
+<body>
+    <h2>რეგისტრაციის ფორმა</h2>
+    
+    <form action="/submit" method="POST">
+        <label for="first_name">სახელი:</label><br>
+        <input type="text" id="first_name" name="first_name" required><br><br>
+        
+        <label for="last_name">გვარი:</label><br>
+        <input type="text" id="last_name" name="last_name" required><br><br>
+        
+        <label for="age">ასაკი:</label><br>
+        <input type="number" id="age" name="age" required><br><br>
+        
+        <label for="gender">სქესი:</label><br>
+        <input type="radio" id="male" name="gender" value="მამრობითი" required> მამრობითი
+        <input type="radio" id="female" name="gender" value="მდედრობითი" required> მდედრობითი<br><br>
+        
+        <label for="accept_terms">დაეთანხმებით პირობებს?</label><br>
+        <input type="checkbox" id="accept_terms" name="accept_terms" required> დიახ<br><br>
+        
+        <button type="submit">გაგზავნა</button>
+    </form>
+</body>
+</html>

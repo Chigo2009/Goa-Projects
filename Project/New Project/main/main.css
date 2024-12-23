@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #D32F2F;
+}
+    
+
+
+hr {
+    border: 0;
+    border-top: 3px solid #D32F2F
+}
+
+h1 {
+    text-align: center;
+}
+
+a {
+    color: black;
+}
+.games {
+    text-align: center;
+}
+.buy{
+   
+    color: cyan;
+    cursor: pointer;
+}
+.price{
+    color: white;
+}
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px;
+    color: black;
+}
+.list {
+    border: 5px solid black; 
+    padding: 20px;
+}
+.games{
+    border: 5px solid black;
+    padding: 20px;
+}
+.red{
+    border: 5px solid black;
+    padding: 20px;
+}
+.ac33{
+    border: 5px solid black;
+    padding: 20px;
+}
+.g4{
+    border: 5px solid black;
+    padding: 20px; 
+}
+.gott{
+    border: 5px solid black;
+    padding: 20px;  
+}
+.goddd{
+    border: 5px solid black;
+    padding: 20px;  
+}
+.acuu{
+    border: 5px solid black;
+    padding: 20px;
+}
+.tlou{
+    border: 5px solid black;
+    padding: 20px; 
+}

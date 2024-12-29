@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ბანკის გადახდის კოდი</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="payment-container">
+        <h1>ბანკის გადახდა</h1>
+        <form action="#" method="post" class="payment-form">
+            <label for="bank-code">ბანკის კოდი:</label>
+            <input type="text" id="bank-code" name="bank-code" placeholder="შეიყვანეთ კოდი" required>
+
+            <label for="amount">რაოდენობა:</label>
+            <input type="number" id="amount" name="amount" placeholder="შეიყვანეთ თანხა" required>
+
+            <label for="currency">ვალუტა:</label>
+            <select id="currency" name="currency" required>
+                <option value="GEL">GEL</option>
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+            </select>
+
+            <button type="s

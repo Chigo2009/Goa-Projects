@@ -1,0 +1,1 @@
+print("Saklaso ar yofila")

@@ -1,1 +1,1 @@
-
+print("Saklaso ar gqvqonia")

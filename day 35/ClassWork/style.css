@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(https://cdn.britannica.com/50/221250-138-7BA5F519/who-was-Joseph-Stalin.jpg?w=800&h=450&c=crop) ;
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+}
+
+header {
+    text-align: center;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}

@@ -7,7 +7,8 @@
 
 
 body{
-    background-color: #D32F2F;
+    background: rgb(2,0,36);
+    background: linear-gradient(278deg, rgba(2,0,36,1) 0%, rgba(176,1,1,1) 91%);
 }
     
 
@@ -29,11 +30,11 @@ a {
 }
 .buy{
    
-    color: cyan;
+    color: #36bf0a;
     cursor: pointer;
 }
 .price{
-    color: white;
+    color: #3eff00;
 }
 table {
     width: 80%;

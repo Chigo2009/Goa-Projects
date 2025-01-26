@@ -1,0 +1,12 @@
+#hover:hover{
+    color: lightgreen
+}
+#link:link{
+    text-decoration: none;
+}
+#visited:visited{
+    color: red;
+}
+#active:active{
+    font-family: sans-serif;
+}

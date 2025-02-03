@@ -1,0 +1,1 @@
+print("code warshi ari davaleba")

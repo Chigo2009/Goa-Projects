@@ -1,0 +1,28 @@
+body, html {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+}
+
+.top-left {
+    background-color: red;
+    color: white;
+    padding: 20px;
+}
+
+.top-right {
+    background-color: blue;
+    color: white;
+    padding: 20px;
+}

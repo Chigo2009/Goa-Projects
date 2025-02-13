@@ -1,0 +1,42 @@
+body, html {
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+
+.top-left, .top-right, .bottom-left, .bottom-right {
+    width: 50%;
+    height: 50%;
+    padding: 20px;
+}
+
+.top-left {
+    background-color: red;
+    color: white;
+}
+
+.top-right {
+    background-color: blue;
+    color: white;
+    align-self: flex-start;
+}
+
+.bottom-left {
+    background-color: green;
+    color: white;
+    align-self: flex-end;
+}
+
+.bottom-right {
+    background-color: yellow;
+    color: white;
+    align-self: flex-end;
+    justify-self: flex-end;
+}

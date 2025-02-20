@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+justify-content: stretch;
+    align-items: center;
+    height: 100vh;
+    flex-flow: column-reverse;
+    
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .box {
+    width: 120px;
+    height: 80px;
+    border: 2px solid #00aaff;
+    background: transparent;
+  }
+  

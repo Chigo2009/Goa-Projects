@@ -1,0 +1,126 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background: #f0f2f5;
+}
+
+
+.flex-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 40px;
+    flex-wrap: wrap;
+    background: #e3e3e3;
+}
+
+.flex-card {
+    background: #fff;
+    padding: 30px;
+    width: 250px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 50px;
+    background: #dfe6e9;
+}
+
+.grid-item {
+    background: #6c5ce7;
+    color: #fff;
+    font-size: 24px;
+    height: 150px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.center-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #dcdde1;
+}
+
+.center-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 40px;
+    width: 320px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.sticky-header {
+    background: #222;
+    color: #fff;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.page-content {
+    padding: 40px 20px;
+}
+
+.page-footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+
+@media (max-width: 768px) {
+    .flex-card {
+        width: 80%;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .center-card {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        margin: 20px auto;
+        width: 90%;
+    }
+
+    .sticky-header {
+        padding: 10px 20px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .page-footer {
+        font-size: 18px;
+    }
+}

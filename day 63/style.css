@@ -1,0 +1,26 @@
+body{
+    background-image: url("cartoon city.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+}
+
+.car{
+    width: 100px;
+    height: 100px;
+    margin-top: 800px;
+    animation: drive 10s ease-in-out;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+.car:hover{
+    animation-play-state: running;
+}
+@keyframes drive {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(1500%);
+    }
+}

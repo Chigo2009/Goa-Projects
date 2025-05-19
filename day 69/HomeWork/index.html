@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>დავალება</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* 1. Flexbox */
+    .flex-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      margin: 40px 0;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      width: 150px;
+      height: 100px;
+      background-color: #f1f1f1;
+      border: 1px solid #ccc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    /* 2. */
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .grid-card {
+      border: 1px solid #ddd;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .grid-card img {
+      width: 100%;
+      display: block;
+    }
+
+    .grid-card .info {
+      padding: 10px;
+      background-color: #fafafa;
+      text-align: center;
+    }
+
+    /* 3.*/
+    @media (max-width: 768px) {
+      .grid-container {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* 4.  */
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #333;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      z-index: 999;
+    }
+
+    /* 5.*/
+    .center-container {
+      position: relative;
+      height: 300px;
+      background-color: #eee;
+      margin: 50px 0;
+    }
+
+    .center-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    .center-content img {
+      width: 100px;
+      display: block;
+      margin: 0 auto 10px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h2 style="text-align:center;">1. Flexbox კარტები</h2>
+  <div class="flex-container">
+    <div class="card">Card 1</div>
+    <div class="card">Card 2</div>
+    <div class="card">Card 3</div>
+    <div class="card">Card 4</div>
+    <div class="card">Card 5</div>
+    <div class="card">Card 6</div>
+  </div>
+
+  <h2 style="text-align:center;">2. Grid Layout</h2>
+  <div class="grid-container">
+    <div class="grid-card">
+      <img src="https://via.placeholder.com/300x150" alt="სურათი">
+      <div class="info">ინფორმაცია სურათზე</div>
+    </div>
+    <div class="grid-card">
+      <img src="https://via.placeholder.com/300x150" alt="სურათი">
+      <div class="info">მეტი ინფორმაცია</div>
+    </div>
+    <div class="grid-card">
+      <img src="https://via.placeholder.com/300x150" alt="სურათი">
+      <div class="info">სხვა ტექსტი</div>
+    </div>
+    <div class="grid-card">
+      <img src="https://via.placeholder.com/300x150" alt="სურათი">
+      <div class="info">დამატებითი ინფორმაცია</div>
+    </div>
+  </div>
+
+  <h2 style="text-align:center;">5. აბსოლუტურად ცენტრში მოთავსებული ელემენტი</h2>
+  <div class="center-container">
+    <div class="center-content">
+      <img src="https://via.placeholder.com/100" alt="ლოგო">
+      <p>ცენტრში მოთავსებული ტექსტი</p>
+    </div>
+  </div>
+
+  <button class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+    Back to Top
+  </button>
+
+</body>
+</html>

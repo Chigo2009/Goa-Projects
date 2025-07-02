@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>document</title>
+  </head>
+  <body>
+
+    <img id="slider" src="https://via.placeholder.com/500x300?text=ფოტო+1" width="500" height="300">
+
+    <br><br>
+
+    <button onclick="prev()">←</button>
+    <button onclick="next()">→</button>
+
+    <script>
+
+      const images = [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRltt5MALvqzHKA4WT_VNLY7wDuxmq3_t7qPw&s",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEyyIwYktOLETJ0MD88SVJdHGXEFdqznWZlg&s",
+        "https://cdn.ambebi.ge/media/__thumbs__/images/2020/07-01/lomi9709799-56097.jpg"
+      ];
+
+      let index = 0;
+
+      function showImage() {
+        document.getElementById("slider").src = images[index];
+      }
+
+      function next() {
+        index++;
+        if (index >= images.length) index = 0;
+        showImage();
+      }
+
+      function prev() {
+        index--;
+        if (index < 0) index = images.length - 1;
+        showImage();
+      }
+    </script>
+
+  </body>
+</html>

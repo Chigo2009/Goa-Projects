@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>დაკლიკებაზე წაშლა</title>
+  <style>
+    li {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <input type="text" id="itemInput" placeholder="დამატე ელემენტი">
+  <button onclick="addItem()">დამატება</button>
+
+  <ul id="itemList"></ul>
+
+  <script>
+    function addItem() {
+      const input = document.getElementById('itemInput');
+      const text = input.value.trim();
+
+      if (text !== '') {
+        const li = document.createElement('li');
+        li.textContent = text;
+
+        
+        li.addEventListener('click', function () {
+          li.remove();
+        });
+
+        document.getElementById('itemList').appendChild(li);
+        input.value = '';
+      }
+    }
+  </script>
+
+</body>
+</html>

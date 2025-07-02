@@ -1,0 +1,59 @@
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Car Rental</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-color: #5c2ee2;
+      background-image: url('./photos/Group.png');
+      background-repeat: no-repeat;
+      background-position: left top;
+      background-size: contain;
+    }
+  </style>
+</head>
+<body class="font-sans min-h-screen flex items-center justify-center px-6 py-10 relative">
+  <div class="bg-transparent max-w-7xl w-full grid grid-cols-1 md:grid-cols-2 items-center gap-10 relative z-10">
+
+    
+    <div class="text-white space-y-6">
+      <h1 class="text-4xl md:text-5xl font-bold leading-tight">
+        Experience the road <br /> like never before
+      </h1>
+      <p class="text-base max-w-md">
+        Aliquam adipsicing velit semper morbi. purus non eu cursus porttitor tristique et gravida. Quis nunc interdum gravida ullamcorper
+      </p>
+      <button class="bg-orange-400 hover:bg-orange-500 text-white px-6 py-3 rounded-md font-semibold">
+        View all cars
+      </button>
+    </div>
+
+    
+    <div class="bg-white p-8 md:p-10 rounded-2xl shadow-xl w-full max-w-xl">
+      <h2 class="text-2xl font-semibold mb-6 text-center">Book your car</h2>
+      <form class="space-y-5">
+        <select class="w-full border border-gray-300 rounded-md p-4 focus:outline-none">
+          <option>Car type</option>
+        </select>
+        <select class="w-full border border-gray-300 rounded-md p-4 focus:outline-none">
+          <option>Place of rental</option>
+        </select>
+        <select class="w-full border border-gray-300 rounded-md p-4 focus:outline-none">
+          <option>Place of return</option>
+        </select>
+        <input type="date" class="w-full border border-gray-300 rounded-md p-4 focus:outline-none" placeholder="Rental date" />
+        <input type="date" class="w-full border border-gray-300 rounded-md p-4 focus:outline-none" placeholder="Return date" />
+        <button type="submit" class="w-full bg-orange-400 hover:bg-orange-500 text-white p-4 rounded-md font-semibold">
+          Book now
+        </button>
+      </form>
+    </div>
+  </div>
+
+ 
+  <img src="./photos/hero-car.png" alt="Car" class="absolute inset-0 m-auto w-[600px] md:w-[700px] pointer-events-none z-0" />
+
+</body>
+</html>

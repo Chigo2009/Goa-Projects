@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+   <script>
+    for (let i = 1; i <= 100; i++) {
+      const h3 = document.createElement("h3");
+      const text = document.createTextNode("child " + i);
+      h3.appendChild(text);
+      document.body.appendChild(h3);
+    }
+  </script>
+</body>
+</html>

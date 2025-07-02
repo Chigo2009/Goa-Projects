@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Rental</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 text-gray-900">
+    <header class="bg-white shadow-sm p-4 flex justify-between items-center">
+      <div class="font-bold text-lg">🚗 Car Rental</div>
+      <nav class="space-x-4">
+        <a href="#" class="hover:underline">Home</a>
+        <a href="#" class="font-bold text-black hover:underline">Vehicles</a>
+        <a href="#" class="hover:underline">Details</a>
+        <a href="#" class="hover:underline">About Us</a>
+        <a href="#" class="hover:underline">Contact Us</a>
+      </nav>
+      <div class="text-sm text-violet-600 text-right">
+        📞 Need help?<br />+995 247-1400
+      </div>
+    </header>
+
+    <main class="py-8">
+      <h1 class="text-center text-2xl font-bold mb-6">Select a vehicle group</h1>
+
+      <div class="flex justify-center flex-wrap gap-2 mb-10">
+        <button class="bg-violet-600 text-white px-4 py-2 rounded-full">All vehicles</button>
+        <button class="bg-gray-200 px-4 py-2 rounded-full">Sedan</button>
+        <button class="bg-gray-200 px-4 py-2 rounded-full">Cabriolet</button>
+        <button class="bg-gray-200 px-4 py-2 rounded-full">Pickup</button>
+        <button class="bg-gray-200 px-4 py-2 rounded-full">SUV</button>
+        <button class="bg-gray-200 px-4 py-2 rounded-full">Minivan</button>
+      </div>
+
+      <div class="grid gap-6 px-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        
+        <div class="bg-white p-4 rounded-xl shadow">
+          <img src="./assets/images/Img.png" alt="Mercedes" class="w-full h-32 object-contain mb-4">
+          <h3 class="text-lg font-semibold">Mercedes</h3>
+          <p class="text-sm text-gray-600">Sedan</p>
+          <p class="text-violet-600 font-bold mt-1">$25 <span class="text-sm font-normal">per day</span></p>
+          <ul class="text-sm text-gray-600 mt-2 space-y-1">
+            <li><img src="./assets/images/gear-shift(1) 1.png" alt=""> Automatic</li>
+            <li>⛽ PB 95</li>
+            <li>❄️ Air Conditioner</li>
+          </ul>
+          <button class="bg-violet-600 text-white mt-4 w-full py-2 rounded-lg">View Details</button>
+        </div>
+
+
+        <div class="bg-white p-4 rounded-xl shadow">
+          <img src="/assets/images/Img(2).png" alt="Mercedes Sport" class="w-full h-32 object-contain mb-4">
+          <h3 class="text-lg font-semibold">Mercedes</h3>
+          <p class="text-sm text-gray-600">Sport</p>
+          <p class="text-violet-600 font-bold mt-1">$50 <span class="text-sm font-normal">per day</span></p>
+          <ul class="text-sm text-gray-600 mt-2 space-y-1">
+            <li>⚙️ Manual</li>
+            <li>⛽ PB 95</li>
+            <li>❄️ Air Conditioner</li>
+          </ul>
+          <button class="bg-violet-600 text-white mt-4 w-full py-2 rounded-lg">View Details</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

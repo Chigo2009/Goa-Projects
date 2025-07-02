@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | IP Address Tracker</title>
+
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: "Roboto", sans-serif;
+        }
+
+        @media screen and (min-width: 320px) {
+            body {
+                background: url("./images/pattern-bg-mobile.png") no-repeat;
+                background-size: 100%;
+                height: 100vh;
+                color: black;
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+            }
+            h1 {
+                font-size: 24px;
+                text-align: center;
+                color: white;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+            input {
+                width: 100%;
+                padding: 15px 10px;
+                border-radius: 8px;
+                border: none;
+                outline: none;
+            }
+            button {
+                background-color: black;
+                width: 50px;
+                border: none;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+                cursor: pointer;
+            }
+            button img {
+                width: 10px;
+            }
+            form {
+                display: flex;
+            }
+            .container {
+                width: 100%;
+                padding: 20px;
+                position: absolute;
+                top: 0;
+            }
+            .card {
+                background-color: white;
+                text-align: center;
+                width: 100%;
+                border-radius: 10px;
+                padding: 20px;
+                margin-top: 20px;
+                box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+            }
+            .card h5 {
+                color: gray;
+                font-size: 7px;
+                letter-spacing: 1.7px;
+                text-transform: uppercase;
+            }
+            .card h2 {
+                font-size: 16px;
+                padding-block: 10px;
+                text-transform: uppercase;
+            }
+        }
+        @media screen and (min-width: 768px) {
+            body {
+                background: url("./images/pattern-bg-mobile.png") no-repeat;");
+                background-size: contain;
+            }
+            form {
+                max-width: 500px;
+                margin: 0 auto;
+            }
+            .card {
+                max-width: 1000px;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-between;
+                text-align: start;
+            }
+            iframe{
+                height: 700px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>IP Address Tracker</h1>
+    <form>
+        <input
+                type="number"
+                name="address"
+                id="address"
+                placeholder="Search ip address"
+        />
+        <button type="submit">
+            <img src="./images/icon-arrow.svg" alt="Icon arrow for button" />
+        </button>
+    </form>
+
+    <div class="card">
+        <div>
+            <h5>IP Address</h5>
+            <h2>192.123123123123</h2>
+        </div>
+        <div>
+            <h5>Location</h5>
+            <h2>192.123123123123</h2>
+        </div>
+        <div>
+            <h5>Timezone</h5>
+            <h2>192.123123123123</h2>
+        </div>
+        <div>
+            <h5>Timezone</h5>
+            <h2>UTC-05:00</h2>
+        </div>
+        <div>
+            <h5>ISP</h5>
+            <h2>192.123123123123</h2>
+        </div>
+    </div>
+</div>
+<iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2977.7490280592624!2d44.74819421768189!3d41.72593417817312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x404473177c179825%3A0x720c3a1f563c7168!2sSaburtalo%2C%20Tbilisi!5e0!3m2!1sen!2sge!4v1746113203331!5m2!1sen!2sge"
+        width="100%"
+        height="400"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+></iframe>
+</body>
+</html>
